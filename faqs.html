@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Paemika Yongwittayakul</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        body {
+            background-color: #080808;
+            color: white;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #ff44cc;
+            margin-bottom: 30px;
+        }
+        .faq-item {
+            background-color: #131313;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .faq-question {
+            font-size: 18px;
+            font-weight: 500;
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question:hover {
+            background-color: #1a1a1a;
+        }
+        .faq-question::after {
+            content: '+';
+            font-size: 22px;
+            transition: transform 0.3s ease;
+        }
+        .faq-question.active::after {
+            transform: rotate(45deg);
+        }
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        .faq-answer.show {
+            padding: 20px;
+            max-height: 500px;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff44cc;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #ff75d8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-question">Are you Chinese?</div>
+                <div class="faq-answer">Technically, no, but biologically, yes. I was born and raised in Thailand, <br>
+                    though my grandparents emigrated from China to Thailand.<br></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Who is your Favorite Authors?</div>
+                <div class="faq-answer">Chris Ryan, Agatha Christie, and Gosho Aoyama</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Coffee or Tea?</div>
+                <div class="faq-answer">Absolutely TEA!!!especially Matcha!!</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">When is your birthday?</div>
+                <div class="faq-answer">February 9</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What programming languages do you know?</div>
+                <div class="faq-answer">I'm proficient in Python, Java, JavaScript, HTML, CSS, and C. I'm always eager to learn new languages and technologies.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What are your career goals?</div>
+                <div class="faq-answer">As a freshman in Computer Engineering, my goal is to become a skilled software developer. I'm particularly interested in embedded systems and creating impactful technology solutions.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Do you have any hobbies outside of programming?</div>
+                <div class="faq-answer">Yes, I have a deep appreciation for classical music, especially Vivaldi's "Winter". I also play the violin and enjoy exploring the intricate complexity of musical compositions.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Are you open to internship opportunities?</div>
+                <div class="faq-answer">Absolutely! I'm always looking for opportunities to gain real-world experience and apply my skills in practical settings. Feel free to contact me if you have any opportunities.</div>
+            </div>
+        </div>
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const questions = document.querySelectorAll('.faq-question');
+            
+            questions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const isActive = question.classList.contains('active');
+                    
+                    questions.forEach(q => {
+                        if (q !== question) {
+                            q.classList.remove('active');
+                            q.nextElementSibling.classList.remove('show');
+                        }
+                    });
+                    
+                    question.classList.toggle('active');
+                    answer.classList.toggle('show');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

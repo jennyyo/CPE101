@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html  lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paemika's Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+
+
+        <script src="main.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        
+        <audio id="background-music" loop>
+            <source src="Cool Vibes.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <button class="btn1">
+            <span id="muteIcon">🔊</span>
+        </button>
+
+        <header class="header">
+            <a href="#home" class="logo">Paemika
+                <span>Yongwittayakul</span></a>
+
+
+                <i class='bx bx-menu' id="menu-icon"></i>
+
+
+                <nav class="navbar">
+                    <a href="#home">Home</a>
+                    <a href="#education">Education</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                
+        </header>
+
+
+        <section class="home" id="home">
+            <div class="home-centent">
+                <h1>Hi, It's <span> Paemika</span></h1>
+                <h3 class="text-animation">I'm a<span></span></h3>
+                <p>I’m a freshman in Computer Engineering with a passion for software development <br>
+                    and problem-solving. I love exploring programming, embedded systems, and creating<br>
+                    impactful technology. Outside of academics, I have a deep appreciation for classical<br>
+                    music and the violin, especially Vivaldi Winter, and its intricate complexity.<br>
+                    </p>
+
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3B7NCQygtnQiG2p0MCX4qsZQ%3D%3D" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/jennyyo" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.instagram.com/jennyy0ng/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.facebook.com/paemika.yongwittayakul/" target="_blank"><i class='bx bxl-facebook'></i></a>
+                </div>
+
+                <div class="btn-group">
+                    <a href="about.html" class="btn">About me</a>
+                    <a href="#contact" class="btn">Contact</a>
+                </div>
+            </div>
+            <div class="circleAvatar">
+                <div class="imageContainer">
+                    <img class="jennieBlack" src="image.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="education" id="education">
+            <h2 class="heading">Education</h2>
+            <div class="timeline-items">
+
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                        <div class="timeline-date">2012</div>
+                        <div class="timeline-content">
+                            <h3>Elementary School</h3>
+                            <p>studied at Saint Paul Convent School</p>
+                        </div>
+                    
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                        <div class="timeline-date">2018</div>
+                        <div class="timeline-content">
+                            <h3>Junior High School</h3>
+                            <p>studied in English program 
+                                at Chonkanyanukoon School</p>
+                        </div>
+                    
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                        <div class="timeline-date">2021</div>
+                        <div class="timeline-content">
+                            <h3>Senior High School</h3>
+                            <p>studied in English program
+                                in Engineering and <br>
+                                Applied Mathematics at Chonkanyanukoon School</p>
+                        </div>
+                    
+                </div>
+
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024</div>
+                        <div class="timeline-content">
+                            <h3>University</h3>
+                            <p>currently studying in Computer Engineering in<br> 
+                                International Program at King Mongkut's University <br>
+                                of Technology Thonburi<br></p>
+                        </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills" class="section skills">
+            <h2 class="heading">Skills</h2>
+            <div class="skills-container">
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="skill-icon">
+                        <span class="skill-name">Python</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="skill-icon">
+                        <span class="skill-name">Java</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-icon">
+                        <span class="skill-name">JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="skill-icon">
+                        <span class="skill-name">HTML5</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="skill-icon">
+                        <span class="skill-name">CSS3</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="skill-icon">
+                        <span class="skill-name">Git</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" class="skill-icon">
+                        <span class="skill-name">C</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go" class="skill-icon">
+                        <span class="skill-name">Go</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" alt="Swift" class="skill-icon">
+                        <span class="skill-name">Swift</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <h2 class="heading">Contact Me</h2>
+            
+            <form action="https://formsubmit.co/jenny.paemika@gmail.com" method="POST">
+                <div class="input-box">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <input type="tel" name="phone" placeholder="Phone Number (Optional)">
+                </div>
+                <textarea name="message" rows="10" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+
+    
+
+      
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3B7NCQygtnQiG2p0MCX4qsZQ%3D%3D" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/jennyyo" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/jennyy0ng/" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.facebook.com/paemika.yongwittayakul/" target="_blank"><i class='bx bxl-facebook'></i></a>
+        </div>
+
+
+        <ul class="list">
+            <li>
+                <a href="faqs.html">FAQs</a>
+            </li>
+            <li>
+                <a href="#home">About Me</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            © Paemika Yongwittayakul  |  All rights reserved
+        </p>
+    </footer>
+
+        <script src="script.js"></script>
+        <script>
+            const menuIcon = document.getElementById('menu-icon');
+            const navbar = document.querySelector('.navbar');
+        
+            menuIcon.addEventListener('click', () => {
+                navbar.classList.toggle('active');
+            });
+        </script>
+
+    
+    
+    </body>
+</html>
